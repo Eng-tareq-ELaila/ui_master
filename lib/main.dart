@@ -56,9 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
         background: Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-            image: AssetImage(
-              'assets/images/background.jpg',
-            ),
+            image: NetworkImage(
+                "https://i.pinimg.com/originals/a8/a9/7c/a8a97c3efe031d2b696000622256dfe8.jpg"),
             fit: BoxFit.cover,
           )),
           child: Padding(
@@ -108,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Column(children: [
                       CircleAvatar(
                         radius: 32,
-                        child: Icon(Icons.star_rate_rounded),
+                        child: Icon(Icons.trending_up_outlined),
                         backgroundColor: Colors.white,
                       ),
                       SizedBox(height: 10),
@@ -118,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Column(children: [
                       CircleAvatar(
                         radius: 32,
-                        child: Icon(Icons.star_rate_rounded),
+                        child: Icon(Icons.last_page_sharp),
                         backgroundColor: Colors.white,
                       ),
                       SizedBox(height: 10),
@@ -131,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Column(children: [
                       CircleAvatar(
                         radius: 32,
-                        child: Icon(Icons.star_rate_rounded),
+                        child: Icon(Icons.stars_outlined),
                         backgroundColor: Colors.white,
                       ),
                       SizedBox(height: 10),
